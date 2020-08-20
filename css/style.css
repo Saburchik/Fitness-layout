@@ -1,0 +1,462 @@
+body {
+    margin: 0;
+    height: 2000px;
+
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    color: #6c7279;
+
+    -webkit-font-smoothing: antialiased;
+
+    border-color: #fff;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Container */
+.container {
+    width: 100%;
+    max-width: 1520px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Header */
+.header_inner {
+    width: 95%;
+    display: flex;
+    padding: 35px 0;
+    position: absolute;
+    z-index: 1000;
+}
+
+.header_logo {
+    font-size: 24px;
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+    cursor: pointer;
+    color: #fff;
+}
+
+.header_logo span {
+    color: #fa7c30;
+}
+
+/* Navbar */
+.nav-main {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-right {
+    position: absolute;
+    right: 0;
+}
+
+.nav-main, .nav_link {
+    margin-left: 30px;
+}
+
+.nav_link {
+    font-size: 13px;
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav_link.squad  {
+    border: 2px solid #fff;
+    padding: 10px;
+}
+
+.nav_link:hover {
+    color: #fa7c30;
+}
+
+.nav_link:hover:after,
+.nav_link.active:after {
+    opacity: 1;
+    display: block;  /*??*/
+}
+
+.nav_link.active {
+    color: #fa7c30;
+}
+
+/* Intro */
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    top: 0;
+
+    background: url(../img/bg-fon.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.intro_inner {
+    width: 100%;
+    height: 530px;
+    max-width: 970px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.intro_title {
+    font-size: 70px;
+    font-weight: 700;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+}
+
+.intro_title span,
+.intro_frond span {
+    color: #fa7c30;
+}
+
+.intro_subtitle {
+    font-size: 14px;
+    font-weight: 400;
+    color: #e8e2df;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 80px;
+}
+
+/* Button */
+.button-orange {
+    background-color: #fa7c30;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 3px;
+    text-align: center;
+
+    cursor: pointer;
+    outline: none;
+    border: none;
+    transition: background .1s linear;
+}
+
+.button-orange:hover {
+    background-color: #d56a29;
+}
+
+.button-orange:active {
+    transform: scale(1.1);
+}
+
+/* Registration */
+
+.regist{
+    width: 100%;
+    max-width: 940px;
+    height: 525px;
+    margin: 0 auto;
+
+
+    box-shadow: 0px 0px 20px 10px rgba(0,0,0,0.2);
+
+    display: flex;
+    margin: -7% auto 20px;
+    position: relative;
+    background-color: #fff;
+    margin-bottom: 100px;
+}
+
+.info_inner {
+    width: 100%;
+    max-width: 940px;
+    margin: 0 auto;
+}
+
+.text-container {
+    position: relative;
+    width: 55%;
+    display: inline-block;
+}
+.text-container h3 {
+    font-size: 36px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+}
+
+.img-container {
+    position: absolute;
+    display: inline-block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+body {
+    height: 3000px;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+section {
+    width: 100%;
+    height: 969px;
+
+    background: url("../img/bg-fon.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.header {
+    height: 124px;
+    padding: 0 5%;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.logo span {
+    color: #fa7c30;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 35px 0;
+}
+
+nav ul li a {
+    font-family: 'Open Sans';
+    font-size: 14px;
+    font-weight: 700;
+    color: #e9e6e5;
+    margin: 30px;
+    text-transform: uppercase;
+}
+
+nav ul {
+    display: flex;
+}
+
+.nav-left {
+    float: left;
+}
+
+.nav-right {
+    float: right;
+}
+
+.nav_cp {
+    border: 3px solid #fff;
+    padding: 10px 15px;
+}
+
+.text-container {
+    position: absolute;
+    left: 13%;
+    top: 42%;
+    transform: translate(-13%, -42%);
+}
+
+h1 {
+    font-size: 70px;
+    font-weight: 700l;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 0;
+}
+
+h1 span {
+    color: #fa7c30;
+    line-height: 40px;
+}
+
+h5 {
+    font-size: 14px;
+    font-weight: 300;
+    color: #fff;
+}
+
+button {
+    background-color: #fa7c30;
+    color: #fff;
+
+    border: none;
+    border-radius: 1px;
+    cursor: pointer;
+
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 15px 25px;
+    outline: none;
+}
+
+button:active {
+    transform: scale(1.1);
+}
+
+ record-container
+
+.article {
+    width: 70%;
+    height: auto;
+    background-color: #fff;
+    box-shadow: 0px 0px 20px 10px rgba(0,0,0,0.2);
+
+    display: flex;
+    margin: -7% auto 20px;
+    position: relative;
+
+}
+
+.article-img {
+    height: 519px;
+}
+
+.article-inside {
+    width: 70%;
+}
+
+.article-title {
+    width: auto;
+    text-align: center;
+    font-size: 19px;
+    font-weight: 700;
+    margin: 75px auto;
+    line-height: 1.2;
+}
+
+.article-schedule {
+     text-align: center;
+}
+
+.schedule-info {
+    display: inline-block;
+}
+
+.selectors {
+    width: 160px;
+    border: rgba(0,0,0,0.9);
+    border-bottom: 2px solid #161418;
+    font-size: 14px;
+    font-weight: 400;
+    color: #5b5a5d;
+    margin: 15px;
+}
+
+.article, .article-inside input {
+    border: rgba(0,0,0,0.9);
+    border-bottom: 2px solid #161418;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+input {
+    width: 130px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.schedule-info {
+    width: 25%;
+}
+
+.button-schedule {
+    text-align: center;
+    margin-top: 50px;
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
